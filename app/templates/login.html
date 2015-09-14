@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block headcontent %}
+    <link href="../static/signup.css" rel="stylesheet">
+    <script src="../static/js/signup.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="header">
+        <h3 class="text-muted">Python Flask App</h3>
+        </div>
+        <div class="jumbotron">
+            <h1>Bucket List App</h1>
+            <form class="form-signin" action="/validateLogin" method="post">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                <button id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+
+
+
+
+      <footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>
+    </div>
+
+{% endblock %}
+
